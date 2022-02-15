@@ -1,0 +1,41 @@
+name: Documentation Request
+description: Request for improving documentation
+labels: ["triage", "documentation"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue type
+      description: What needs to be fixed?
+      options:
+        - Request for documentation
+        - Incorrect documentation
+        - Clarification needed
+        - Others
+    validations:
+      required: true
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      description: Which team does this issue fall under?
+      options:
+        - Platform
+        - IAM
+        - Threat Detection
+        - RRC
+        - General
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestions
+      description: Add your suggestions here, if any.
